@@ -19,6 +19,61 @@
         <div class="container__caixa">
             <h1 class="container__titulo">Com Miraxus plus puedes ver ilimtados mangas, animes .</h1>
             <img src="1670187831069.png" alt="O combo+ é a junção do alura+ e o alura língua" class="container__imagem">
+            <progress id="myprogress" value="10" max="100" ></progress>
+            <script>
+  setInterval( function(){
+      let value = document.getElementById("myprogress").value;
+      value = Math.min(value + .10, 200) % 100;
+      document.getElementById("myprogress").value = value;
+      document.getElementById("progress-text").innerText = Math.round(value);
+  }, 1 );
+  </script>
+            <style>#myprogress{
+    width: 150px;
+  height: 10px;
+  
+}
+/* progress:not([value]) {
+   /* Styling here */
+} */
+progress[value] {
+  width: 650px;
+  height: 970px;
+}
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 250px;
+  height: 20px;
+}
+
+/* el dentro */
+progress[value]::-webkit-progress-bar {
+ 
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+/* el fuera */
+progress[value]::-webkit-progress-value {
+    color: white;
+ background: rgb(222,231,0);
+background: linear-gradient(0deg, rgba(222,231,0,1) 17%, rgba(255,250,146,1) 34%, rgba(247,247,247,0.6755077030812324) 63%, rgba(255,235,0,1) 82%);
+  float:left;
+  width: 280px;
+  height: 30px;
+  background-size:cover;
+  background-repeat:no-repeat;
+    border-radius: 10px;   
+ background-size: 100% 100%;
+  
+}
+
+
+/* TH
+E END */</style>
             <a href="#" class="container__botao">Assine por 12x de R$ 120,00*</a>
             <a href="#" class="container__botao botao_secundario">Assinar somente a Miraxus</a>
             <p class="container__aviso">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
