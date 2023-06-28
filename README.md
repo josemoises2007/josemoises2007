@@ -1,4 +1,4 @@
-# hola  eu sou jose 
+# oi  eu sou jose 
 <p>gosto dos linguages de programaçao:</P>
 <li>PHP</li>
 <li>MYSQL</li>
